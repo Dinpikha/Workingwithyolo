@@ -8,7 +8,7 @@ I started by experimenting with the lightweight YOLOv8 nano model (yolov8n) for 
 - Detects 17 celebrities in images using a fine-tuned YOLOv8n model
 - Auto-downloads the dataset from Kaggle
 - Auto-generates bounding box labels using OpenCV face detection
-- Trained from scratch with 80/20 train/val split
+- Trained with 80/20 train/val split
 
 ## Celebrities it can detect
 Angelina Jolie, Jennifer Lawrence, Megan Fox, Sandra Bullock, Will Smith,
@@ -18,37 +18,38 @@ Robert Downey Jr, Tom Hanks
 
 ## Installation
 Clone the repository:
-\```bash
+```bash
 git clone https://github.com/Dinpikha/Workingwithyolo.git
+
 cd Workingwithyolo
-\```
+```
 
 Install dependencies:
-\```bash
+```bash
 pip install -r requirements.txt
-\```
+```
 
 ## How to run
 
 **Step 1 - Generate labeled dataset:**
-\```bash
+```bash
 python photodetection.py
-\```
+```
 
 **Step 2 - Generate data.yaml:**
-\```bash
+```bash
 python createyaml.py
-\```
+```
 
 **Step 3 - Train the model:**
-\```bash
+```bash
 python train.py
-\```
+```
 
 **Step 4 - Test on an image:**
-\```bash
+```bash
 python test.py
-\```
+```
 
 ## Results
 - Trained on 100 images per celebrity (~1700 total)
