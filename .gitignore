@@ -1,0 +1,16 @@
+
+
+
+runs/
+
+*.pt
+
+/home/Dipika/.cache/kagglehub/
+
+
+
+
+
+data.yaml
+writingbymyself.yaml
+config.yaml
